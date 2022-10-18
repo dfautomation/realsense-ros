@@ -160,3 +160,11 @@ install(FILES nodelet_plugins.xml
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
     )
 
+install(PROGRAMS scripts/create_udev_rules
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+install(FILES udev/99-realsense-libusb.rules
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/udev)
+
+install(FILES udev/99-realsense-libusb.rules
+  DESTINATION /etc/udev/rules.d)

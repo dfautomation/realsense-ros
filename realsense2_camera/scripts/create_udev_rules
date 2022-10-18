@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo ""
+echo "This script copies a udev rule to /etc to give permissions for users"
+echo ""
+
+sudo cp `rospack find realsense2_camera`/udev/99-realsense-libusb.rules /etc/udev/rules.d
+
+
+echo ""
+echo "Restarting udev"
+echo ""
+sudo service udev reload
+sudo service udev restart
+
