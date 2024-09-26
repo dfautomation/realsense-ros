@@ -9,7 +9,7 @@ catkin_package(
     )
 
 # Install files
-install(DIRECTORY launch meshes rviz urdf
+install(DIRECTORY launch rviz urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
 # Tests
