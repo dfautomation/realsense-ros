@@ -28,6 +28,7 @@
   <depend>ddynamic_reconfigure</depend>
   <depend>diagnostic_updater</depend>
   <depend>librealsense2</depend>
+  <exec_depend>depth_image_proc</exec_depend>
   <export>
     <nodelet plugin="${prefix}/nodelet_plugins.xml" />
   </export>
